@@ -1,0 +1,6 @@
+[submodule "helloworld/lib/fprime"]
+	path = helloworld/lib/fprime
+	url = https://github.com/nasa/fprime.git
+[submodule "LED-Blinker/lib/fprime"]
+	path = LED-Blinker/lib/fprime
+	url = https://github.com/nasa/fprime.git
