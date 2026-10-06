@@ -2,9 +2,6 @@ module hello {
     @ Hello World component
     active component HelloWorld {
 
-        # One async command/port is required for active components
-        # This should be overridden by the developers with a useful command/port
-        @ TODO
         @ Command to issue greeting with maximum length of 20 characters
         async command SAY_HELLO(
             greeting: string size 20 @< Greeting to repeat in the Hello event

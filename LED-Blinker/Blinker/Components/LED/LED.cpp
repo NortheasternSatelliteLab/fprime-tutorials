@@ -21,11 +21,9 @@ LED ::~LED() {}
 // ----------------------------------------------------------------------
 
 void LED::BLINKING_ON_OFF_cmdHandler(FwOpcodeType opCode, U32 cmdSeq, const Fw::On& onOff) {
-    this->m_toggleCounter = 0;               // Reset count on any successful command
-    this->m_blinking = Fw::On::ON == onOff;  // Update blinking state
+    this->m_ticksSinceToggle = 0;   // Reset count on any successful command
+    this->m_blinkingState = onOff;  // Update blinking state
 
-    // TODO: Emit an event SetBlinkingState to report the blinking state (onOff).
-    // NOTE: This event will be added during the "Events" exercise.
     this->log_ACTIVITY_HI_SetBlinkingState(onOff);
 
     // TODO: Report the blinking state (onOff) on channel BlinkingState.

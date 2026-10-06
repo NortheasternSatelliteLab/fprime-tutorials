@@ -2,8 +2,6 @@ module Blinker {
     @ Component that blinks an LED driven by a rate group
     active component LED {
 
-        # One async command/port is required for active components
-        # This should be overridden by the developers with a useful command/port
         @ Command to turn on or off the blinking LED
         async command BLINKING_ON_OFF(
             onOff: Fw.On @< Indicates whether the blinking should be on or off

@@ -31,7 +31,6 @@ class HelloWorld final : public HelloWorldComponentBase {
 
     //! Handler implementation for command SAY_HELLO
     //!
-    //! TODO
     //! Command to issue greeting with maximum length of 20 characters
     void SAY_HELLO_cmdHandler(FwOpcodeType opCode,              //!< The opcode
                               U32 cmdSeq,                       //!< The command sequence number
